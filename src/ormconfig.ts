@@ -23,7 +23,7 @@ const ormConfig: ConnectionOptions[] = [
 		type: 'better-sqlite3',
 		database: 'database.test.sqlite',
 		synchronize: true,
-		logging: true,
+		logging: false,
 		dropSchema: true,
 		entities: ['src/entity/**/*.ts'],
 		migrations: ['src/migration/**/*.ts'],

@@ -1,7 +1,6 @@
 @host = http://localhost:4000
 @token = this is a JWT placeholder
 
-###
 POST {{host}}/auth/register
 Content-Type: application/json
 
@@ -12,6 +11,7 @@ Content-Type: application/json
 }
 
 ###
+
 POST {{host}}/auth/login
 Content-Type: application/json
 
@@ -21,9 +21,11 @@ Content-Type: application/json
 }
 
 ###
+
 GET {{host}}/auth/me
 Authorization: Bearer {{token}}
 
 ###
+
 GET {{host}}/auth/logout
 Authorization: Bearer {{token}}
