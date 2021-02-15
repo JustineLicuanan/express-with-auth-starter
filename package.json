@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"license": "MIT",
 	"scripts": {
+		"up": "npx npm-check-updates -u",
 		"dev": "tsnd --respawn -T --clear --rs src/index.ts",
 		"test": "jest",
 		"commit": "git add . && git commit -m",
